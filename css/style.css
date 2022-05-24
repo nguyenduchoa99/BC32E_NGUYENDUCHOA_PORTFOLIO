@@ -1,0 +1,506 @@
+* {
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.navbar-brand {
+    font-size: 36px;
+}
+
+.navbar-brand i {
+    color: #35a22c;
+    margin-right: 3px;
+    font-size: 45px;
+}
+
+#collapsibleNavbar .nav-item
+{
+   margin:0 10px
+}
+
+#collapsibleNavbar .nav-item .nav-link
+{
+   color:#fff;
+   transition:all .5s
+}
+
+#collapsibleNavbar .nav-item:hover .nav-link
+{
+   color:#35a22c
+}
+
+#collapsibleNavbar .nav-item::after
+{
+   content:"";
+   width:0;
+   height:2px;
+   background-color:#35a22c;
+   display:block;
+   transition:all .5s
+}
+
+#collapsibleNavbar .nav-item:hover::after
+{
+   width:100%
+}
+
+#collapsibleNavbar .nav-item.active .nav-link
+{
+   color:#35a22c
+}
+
+#navbarPort .nav-item.active::after
+{
+   width:100%
+}
+
+header .navbar-toggler
+{
+   background-color:#35a22c
+}
+
+header .navbar-toggler:hover
+{
+   background-color:#0ea8cf;
+}
+
+
+@media screen and (max-width:767.98px) {
+   header .navbar-collapse
+   {
+      background-color:#fff
+   }
+
+   #collapsibleNavbar .nav-item
+   {
+      margin:0;
+      padding:0 10px
+   }
+
+   #collapsibleNavbar .nav-item:hover
+   {
+      background-color:#35a22c
+   }
+
+   #collapsibleNavbar .nav-item .nav-link
+   {
+      color:#35a22c
+   }
+
+   #collapsibleNavbar .nav-item:hover .nav-link
+   {
+      color:#fff
+   }
+
+   #collapsibleNavbar .nav-item.active::after,
+   #collapsibleNavbar .nav-item:hover::after
+   {
+      width:0
+   }
+}
+
+@media screen and (max-width:376px) {
+   header .navbar-brand i
+   {
+      font-size:8vw
+   }
+
+   header .navbar-brand
+   {
+      font-size:7vw
+   }
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: #35a22c;
+    transition: all 0.5s;
+}
+
+
+.menu .nav-item .nav-link {
+    color: #ffffff;
+}
+
+
+.menu li.active::after {
+    width: 100%;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+.menu .nav-item .nav-link:hover {
+    color: #35a22c;
+}
+
+.menu .nav-item.active .nav-link {
+    color: #35a22c;
+}
+
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.carousel-item:nth-child(1) {
+    background-image: url(../img/finland.jpg);
+
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../img/mountains.jpg);
+
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(../img/mountains-1.jpg);
+
+}
+
+@media screen and (max-height:415px) {
+    .carousel-caption img
+    {
+       width:100px
+    }
+ 
+    .myCarousel .carousel-caption h5
+    {
+       font-size:5vw;
+       line-height:5vw
+    }
+ 
+    .myCarousel .carousel-caption p
+    {
+       font-size:3vw
+    }
+ 
+    .carousel-caption
+    {
+       padding-top:0
+    }
+ }
+ 
+ @media screen and (max-width:320px) {
+    .carousel_thumb
+    {
+       width:120px
+    }
+ 
+    .carousel-caption img
+    {
+       width:120px
+    }
+ 
+    .myCarousel .carousel-caption h5
+    {
+       font-size:10vw;
+       line-height:10vw
+    }
+ 
+    .myCarousel .carousel-caption p
+    {
+       font-size:5vw
+    }
+ 
+    .carousel-caption
+    {
+       padding-top:0
+    }
+ }
+
+.mycarousel .carousel-indicators li.active {
+    background-color: #35a22c;
+}
+
+.mycarousel .carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(39, 43, 54, .5);
+}
+
+.carousel-item .carousel-caption h5 {
+    font-size: 56px;
+    line-height: 65px;
+}
+
+.carousel-item .carousel-caption p {
+    font-size: 24px;
+}
+
+.carousel_thumb {
+    width: 140px;
+    margin: auto;
+}
+
+.carousel_thumb img {
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.project {
+    padding: 80px 0;
+}
+
+.project .title {
+    max-width: 750px;
+
+}
+
+.project .title h1 {
+    font-size: 36px;
+    line-height: 42px
+}
+
+.project .title h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.project .title p {
+    line-height: 24px;
+    color: #585858;
+}
+
+.project .nav-pills {
+    margin-bottom: 30px;
+    
+}
+
+.project .nav-pills .nav-link {
+    border: 1px solid #000000;
+    margin: 0 5px;
+    color: #000000;
+    
+}
+
+.project .nav-pills .nav-link.active {
+    background-color: #35a22c;
+    color: #ffffff;
+    border-color: #35a22c;
+}
+
+.tab-content .tab-pane .card {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
+}
+
+.project .card .card-body {
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
+}
+
+.project .card p {
+    color: #585858;
+}
+
+.project .card h4 {
+    font-size: 20px;
+}
+
+.project .tab-content .card:hover .card-body {
+    border-color: #35a22c;
+}
+
+.project .tab-content .card:hover h4 {
+    color: #35a22c;
+}
+
+.feature {
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 120px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.feature .overlay {
+    background: rgba(7, 10, 12, .72);
+}
+
+.feature .feature-heading {
+    position: relative;
+    max-width: 750px;
+}
+
+.feature .feature-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.feature .feature-heading p {
+    line-height: 24px;
+}
+
+.feature .feature-content .row .feature-item {
+    padding: 40px 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    transition: all 0.5s;
+}
+
+.feature .feature-content .row .feature-item i {
+    font-size: 48px;
+    color: #35a22c;
+}
+
+.feature .feature-content .row .feature-item h4 {
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.feature .feature-content .row .feature-item p {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.feature .feature-content .feature-item:hover {
+    background: #000000;
+    border-color: #ffffff;
+}
+
+.award {
+    color: #585858;
+    padding: 70px 0;
+    position: relative;
+}
+
+.award .award-bg {
+    background-image: url(../img/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:766px) {
+    .award .award-bg {
+        background-size: cover;
+    }
+
+}
+
+.award .award-heading {
+    background: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    padding: 45px;
+    max-width: 750px;
+}
+
+.award .award-heading h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.award .award-heading p {
+    line-height: 24px;
+    color: #585858;
+}
+
+.award .award-img {
+    padding: 45px 0;
+}
+
+footer {
+    background: #222;
+}
+
+footer .footer-contact a {
+    margin-right: 10px;
+}
+
+footer .footer-contact a i {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 100%;
+    border: 1px solid #454545;
+    transition: all 0.5s;
+    color: #aaaaaa;
+}
+
+footer .footer-contact a:hover{
+    text-decoration: none;
+}
+
+footer .footer-contact i:hover{
+border-color: #35a22c;
+color: #35a22c;
+}
+
+footer .footer-copyright {
+    border-top: 1px solid #454545;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+footer .footer-copyright p {
+    color: #aaa;
+}
+
+footer .footer-copyright a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer .footer-copyright a:hover {
+    color: #35a22c;
+    text-decoration: none;
+}
